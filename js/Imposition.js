@@ -9,21 +9,18 @@ function recupMontantImposition(revenus){
     } 
     
     else if (revenus <= t2){
-        return ((revenus - t1 ) / 100 * 11);
+        return Number((revenus - t1) * 0.11).toFixed(2);
     } 
     
     else if (revenus <= t3){
-        let impot = ((revenus - t2 ) * 0.3) + ((t2 - t1 ) * 0.11);
-        return impot.toFixed(2);
+        return Number(((revenus - t2) * 0.3) + ((t2 - t1) * 0.11)).toFixed(2);
     } 
     
     else if (revenus <= t4){
-        let impot = ((revenus - t3 ) * 0.41) + ((t3 - t2 ) * 0.3) + ((t2 - t1 ) * 0.11);
-        return impot.toFixed(2); 
+        return Number(((revenus - t3) * 0.41) + ((t3 - t2) * 0.3) + ((t2 - t1) * 0.11)).toFixed(2);
     }
     
     else if (revenus > t4){
-        let impot = ((revenus - t4) * 0.45) + ((t4 - t3 ) * 0.41) + ((t3 - t2 ) * 0.3) + ((t2 - t1 ) * 0.11);
-        return impot.toFixed(2); 
+        return Number(((revenus - t4) * 0.45) + ((t4 - t3) * 0.41) + ((t3 - t2) * 0.3) + ((t2 - t1) * 0.11)).toFixed(2);
     }
 }

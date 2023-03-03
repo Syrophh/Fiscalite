@@ -24,6 +24,6 @@ MesTestsUnitaires.prototype.testsTranche4 = function () {
     assertEquals('168994€ de revenus', 54238.55, recupMontantImposition(168994));
 };
 MesTestsUnitaires.prototype.testsTranche5 = function () {
-    assertEquals('168995€ de revenus', 54239.45, recupMontantImposition(168995));
-    assertEquals('1000000€ de revenus', 428191.70, recupMontantImposition(1000000));
+    assertEquals('168995€ de revenus', 54239.00, recupMontantImposition(168995));
+    assertEquals('1000000€ de revenus', 428191.25, recupMontantImposition(1000000));
 };
